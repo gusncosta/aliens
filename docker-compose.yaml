@@ -3,20 +3,14 @@ version: '3.2'
 services:
     test_mars:
       build: .
-      command: bash -c "rspec martian_spec.rb > mars_tests.txt" 
+      command: bash -c "rspec martian_spec.rb > mars_tests.txt" # TODO: why do I have to pass the test command as an argument to bash -c ?
       volumes:
-        - ./:/aliens
-      tty: true
-      stdin_open: true
+        - ./:/aliens # create a bind-mount to store locally the log files created inside container process
 
     test_venus:
       build: .
       command: bash -c "rspec venusian_spec.rb > venus_tests.txt" 
       volumes:
         - ./:/aliens
-      #tty: true
-      #stdin_open: true
 
-# volumes:
-#     - ./:/aliens
     
