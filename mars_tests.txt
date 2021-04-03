@@ -1,0 +1,18 @@
+..F
+
+Failures:
+
+  1) Martian fails in mars
+     Failure/Error: expect(martian.failing_in_mars).to be true
+
+       expected true
+            got false
+     # ./martian_spec.rb:16:in `block (2 levels) in <top (required)>'
+
+Finished in 0.01473 seconds (files took 0.08813 seconds to load)
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./martian_spec.rb:14 # Martian fails in mars
+

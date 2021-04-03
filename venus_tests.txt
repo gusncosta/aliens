@@ -1,0 +1,19 @@
+..F
+
+Failures:
+
+  1) Venusian fails in venus
+     Failure/Error: expect(venusian.failing_in_mars).to be true
+
+     NoMethodError:
+       undefined method `failing_in_mars' for #<Venusian:0x000055ddf1b45cb0 @knows_earth=false>
+       Did you mean?  failing_in_venus
+     # ./venusian_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+Finished in 0.00354 seconds (files took 0.08798 seconds to load)
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./venusian_spec.rb:15 # Venusian fails in venus
+

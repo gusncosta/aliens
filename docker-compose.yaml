@@ -1,0 +1,22 @@
+version: '3.2'
+
+services:
+    test_mars:
+      build: .
+      command: bash -c "rspec martian_spec.rb > mars_tests.txt" 
+      volumes:
+        - ./:/aliens
+      tty: true
+      stdin_open: true
+
+    test_venus:
+      build: .
+      command: bash -c "rspec venusian_spec.rb > venus_tests.txt" 
+      volumes:
+        - ./:/aliens
+      #tty: true
+      #stdin_open: true
+
+# volumes:
+#     - ./:/aliens
+    
