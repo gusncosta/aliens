@@ -1,4 +1,4 @@
-# TODO: Best practices: fix a ruby version
+# TODO: Best practices: provide ruby version 
 FROM ruby 
 
 WORKDIR aliens
